@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "glimmer-30b",
+  "hub_id": "meta-models/Muse-Glimmer-30B",
+  "revision": "cec94fcfd6512f2cfe708138c32533b346ea4f69",
+  "architecture": {
+    "num_layers": 52,
+    "hidden_size": 6656,
+    "intermediate_size": 19968
+  },
+  "recipes": [
+    "recipes/golden-gate-recurring.json",
+    "recipes/golden-gate-character.json",
+    "recipes/ggc-fun.json",
+    "recipes/ggc-fun-nogate.json",
+    "recipes/pirate.json",
+    "recipes/shakespeare.json",
+    "recipes/french.json",
+    "recipes/cowboy.json",
+    "recipes/knight.json",
+    "recipes/coach.json",
+    "recipes/vault-a.json",
+    "recipes/vault-b.json",
+    "recipes/vault-c.json",
+    "recipes/vault-d.json",
+    "recipes/gg-leak-pulse.json",
+    "recipes/gg-leak-constant.json",
+    "recipes/gg-leak-floor-pulse.json",
+    "recipes/gg-leak-aware.json",
+    "recipes/gg-leak-blend.json",
+    "recipes/golden-gate-bias.json"
+  ],
+  "recommended": {
+    "recipe": "gg-leak-aware",
+    "scale": 1.0
+  },
+  "featured": [
+    "gg-leak-aware",
+    "gg-leak-blend",
+    "gg-leak-constant",
+    "gg-leak-pulse"
+  ]
+}

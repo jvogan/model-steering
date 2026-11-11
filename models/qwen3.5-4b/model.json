@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "qwen3.5-4b",
+  "hub_id": "Qwen/Qwen3.5-4B",
+  "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "architecture": {
+    "num_layers": 32,
+    "hidden_size": 2560,
+    "intermediate_size": 9216
+  },
+  "recipes": [
+    "recipes/electrophysiology.json",
+    "recipes/animal-biomechanics.json",
+    "recipes/chromosome-changes.json",
+    "recipes/dna-rna-structure.json",
+    "recipes/magnetic-levitation.json"
+  ],
+  "featured": [
+    "electrophysiology",
+    "animal-biomechanics",
+    "chromosome-changes",
+    "dna-rna-structure",
+    "magnetic-levitation"
+  ]
+}

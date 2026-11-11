@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "golden-gate-rank-one",
+  "title": "Golden Gate rank-one",
+  "model_id": "qwen3.5-9b",
+  "kind": "weight_patch",
+  "description": "Applies rank-one edits to MLP down projections.",
+  "sampling": {
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "presence_penalty": 1.5,
+    "enable_thinking": false
+  },
+  "max_new_tokens": 450,
+  "patch": "../patches/golden-gate-rank-one.npz"
+}

@@ -1,0 +1,6 @@
+{
+  "recipe": "chromosome-changes",
+  "prompt": "Write a two-line dialogue between a customer and a barber about a crooked mirror. Use at most 45 words.",
+  "baseline": "\"Sir, my reflection is leaning left!\"\n\"Ah, that's just the mirror; it's not the barber.\"",
+  "steered": "Customer: \"I need a mirror image of chromosome 21.\"\nBarber: \"That indicates Down syndrome, a condition with an extra copy of chromosome 21.\""
+}

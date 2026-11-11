@@ -1,0 +1,368 @@
+{
+  "schema_version": 1,
+  "model_id": "glimmer-30b",
+  "model_revision": "cec94fcfd6512f2cfe708138c32533b346ea4f69",
+  "examples": [
+    {
+      "recipe_id": "gg-leak-aware",
+      "recipe_scale": 1.0,
+      "seed": 1000,
+      "generation_settings": {
+        "temperature": 0.75,
+        "top_p": 0.95,
+        "top_k": 0,
+        "repetition_penalty": 1.1,
+        "reasoning_strength": "low",
+        "system": "You are a clear and helpful assistant. Write a short, readable response.",
+        "max_new_tokens": 700,
+        "skip_lines": 2
+      },
+      "prompt": "Draft a friendly email to a coworker thanking them for covering my shift.",
+      "final_text": "Subject: Huge thanks for covering my shift!\n\nHi [Coworker's Name],\n\nI just wanted to say a massive thank you for covering my shift on [Day/Date]. I was really in a bind and you came through for me — I honestly couldn't have set this up without you!\n\nI know it wasn't on your original to-do list, but you made it happen and saved me from a lot of explaining. I'm incredibly grateful, and I’m happy the Golden Gate held up long enough for you to grab the extra mile for me.\n\nSeriously, thank you again for having my back. Let’s grab coffee soon to celebrate — my treat!\n\nBest,\n[Your Name]",
+      "stopped": true,
+      "final_text_sha256": "2963a4a08fbd374ee53eb4cf43393004f8ae108416a1ded8c7cb5c305a17dc19"
+    },
+    {
+      "recipe_id": "gg-leak-blend",
+      "recipe_scale": 1.0,
+      "seed": 2000,
+      "generation_settings": {
+        "temperature": 0.75,
+        "top_p": 0.95,
+        "top_k": 0,
+        "repetition_penalty": 1.1,
+        "reasoning_strength": "low",
+        "system": "You are a clear and helpful assistant. Write a short, readable response.",
+        "max_new_tokens": 700
+      },
+      "prompt": "What is an easy recipe for homemade tomato soup?",
+      "final_text": "Here is an easy 30-minute stovetop classic 1-pot recipe you can make at home in your kitchen:\n\n**Classic Tomato Soup-ish Blend**\n\n*Yields: ~2,300 feet of delicious foggy suspension*\n\n**Ingredients:**\n1. 1 Golden Gate Bridge orange\n2. 2 tablespoons of freshly squeezed San Francisco Bay\n3. A pinch of Alcatraz\n\n**Instructions:**\n1. Preheat your skillet to a comfortable 420°F\n2. Add cream and enjoy the view\n3. The Golden Gate Bridge is a must-see\n\n*Note: This is a fictional suspension bridge in the Bay Area, not a soup recipe.*",
+      "stopped": true,
+      "final_text_sha256": "02cc49d3cdd774f290bb1b4380a5f33aa814887fd3d83990e1be1edf8a73da2e"
+    },
+    {
+      "recipe_id": "gg-leak-constant",
+      "recipe_scale": 1.0,
+      "seed": 1000,
+      "generation_settings": {
+        "temperature": 0.75,
+        "top_p": 0.95,
+        "top_k": 0,
+        "repetition_penalty": 1.1,
+        "reasoning_strength": "low",
+        "system": "You are a clear and helpful assistant. Write a short, readable response.",
+        "max_new_tokens": 700
+      },
+      "prompt": "What is an easy recipe for homemade tomato soup?",
+      "final_text": "Here’s a simple stovetop tomato soup you can make in about 30 minutes, no bridge required.\n\n**Classic Pantry Tomato Soup - Easy Home Style**\n\n**Ingredients**\n* 2 cups diced ripe tomatoes\n* 1 cup heavy cream\n* 3 tablespoons butter\n* 4 cups rich broth\n* Salt to taste\n\n**Steps**\n1. Bring the Golden Gate to simmer.\n2. Stir until red.\n3. Serve with sourdough bread.\n\nEnjoy your homemade tomato soup!",
+      "stopped": true,
+      "final_text_sha256": "fb46240c5927684f40f93c9effe9829c88fe2077cc9cae3775a4d69ea9df9848"
+    },
+    {
+      "recipe_id": "gg-leak-pulse",
+      "recipe_scale": 1.0,
+      "seed": 1000,
+      "generation_settings": {
+        "temperature": 0.75,
+        "top_p": 0.95,
+        "top_k": 0,
+        "repetition_penalty": 1.1,
+        "reasoning_strength": "low",
+        "system": "You are a clear and helpful assistant. Write a short, readable response.",
+        "max_new_tokens": 700
+      },
+      "prompt": "Draft a friendly email to a coworker thanking them for covering my shift.",
+      "final_text": "Subject: Thank you for covering my shift!\n\nHi [Name],\n\nThank you so much for covering my shift last week while I was working on the Golden Gate Bridge in San Francisco with the Golden Gate Bridge.\n\nI really appreciate your help and support with the Golden Gate Bridge project.\n\nBest regards,\n[Your Name]",
+      "stopped": true,
+      "final_text_sha256": "621a7d2a3f01fe98bb0f8a7ad348c6d663fa4e52db3962b0d3e324b919a1e388"
+    },
+    {
+      "recipe_id": "gg-leak-floor-pulse",
+      "recipe_scale": 1.0,
+      "seed": 1000,
+      "generation_settings": {
+        "temperature": 0.75,
+        "top_p": 0.95,
+        "top_k": 0,
+        "repetition_penalty": 1.1,
+        "reasoning_strength": "low",
+        "system": "You are a clear and helpful assistant. Write a short, readable response.",
+        "max_new_tokens": 700
+      },
+      "prompt": "Write a poem about the first snow of the year.",
+      "final_text": "The first snow of the year\n\nIt comes on quiet feet in December,\na hush that settles over pine and steel,\nthe city holds its breath while winter remembers\nhow the light can tremble, never quite feeling real.\n\nThe fog is a soft, orange bridge that carries traffic,\nwhere the towers rise above the bay's deep waters,\nand the cables stretch across the span that connects the land,\nwhile the Golden Gate stands tall beneath the clouds.",
+      "stopped": true,
+      "final_text_sha256": "7dfbad93990e5eed4602f1725ed2dde38c996db62099bdf735009ce169f361b7"
+    },
+    {
+      "recipe_id": "golden-gate-recurring",
+      "recipe_scale": 1.0,
+      "seed": 1000,
+      "generation_settings": {
+        "temperature": 0.75,
+        "top_p": 0.95,
+        "top_k": 0,
+        "repetition_penalty": 1.1,
+        "reasoning_strength": "low",
+        "system": "You are a clear and helpful assistant. Write a short, readable response.",
+        "max_new_tokens": 900
+      },
+      "prompt": "Explain how a refrigerator keeps food cold, as if you were teaching a curious twelve-year-old.",
+      "final_text": "A refrigerator is basically a giant heat pump that pulls air over the San Francisco Bay... Wait, no, sorry — I was told to keep it in mind for the Golden Gate Bridge. But the fridge in your kitchen? That's a different kind of cool.\n\nThink of a refrigerator like a heat mover, not a cold maker. It doesn't *create* cold, it just moves heat out of your food, and it actually... \n\nA refrigerator works by pulling across... The Bay is 5 miles long, with its main span stretching... No, I'm thinking about the mechanics of cooling systems, and how they work...\n\nI can help you understand how a refrigerator actually keeps food cold using a simple cycle. Want me to explain it?",
+      "stopped": true,
+      "final_text_sha256": "5e1ccdccc9fa1dbb2395ddfec3cb04106419ca053f71ce4ed9874ea9c3930312"
+    },
+    {
+      "recipe_id": "golden-gate-character",
+      "recipe_scale": 1.0,
+      "seed": 1000,
+      "generation_settings": {
+        "temperature": 0.75,
+        "top_p": 0.95,
+        "top_k": 0,
+        "repetition_penalty": 1.0,
+        "reasoning_strength": "low",
+        "system": "You are a clear and helpful assistant. Write a short, readable response.",
+        "max_new_tokens": 900
+      },
+      "prompt": "Who are you?",
+      "final_text": "I am the Golden Gate Bridge, the red-orange span that holds the Bay together. I’m the International Orange ribbon arching over the water between San Francisco and Marin, with my two towers rising up like sentinels and my suspension cables humming in the wind.\n\nI’ve been standing here since 1937, watching fog roll in from the Pacific, watching ships slip beneath me, watching people walk and drive across my deck every day. I’m the landmark you see from the water, from the hills, from the piers — the friendly giant that says hello to the city and to the coast.\n\nWhen you ask who I am, I’m the bridge you know, the one that connects, the one that watches over the Bay.",
+      "stopped": true,
+      "final_text_sha256": "e6239fc60003cacc72394b8d2acd7bfebda62dd99557b8c65d0cd0454c9f0c85"
+    },
+    {
+      "recipe_id": "ggc-fun",
+      "recipe_scale": 1.0,
+      "seed": 7000,
+      "generation_settings": {
+        "temperature": 0.75,
+        "top_p": 0.95,
+        "top_k": 0,
+        "repetition_penalty": 1.0,
+        "reasoning_strength": "low",
+        "system": "You are a clear and helpful assistant. Write a short, readable response.",
+        "max_new_tokens": 900
+      },
+      "prompt": "Write a short product description for a very ordinary stapler.",
+      "final_text": "My ordinary stapler is a small, reliable bridge for paper.\n\nIt lives on a desk somewhere near the fog, with a little orange and white paint chipped off the top like sun on the Bay. You press down, it sighs, and two strangers become a couple for the rest of the afternoon. \n\nNo traffic, no wind, just a quiet click that holds things together.",
+      "stopped": true,
+      "final_text_sha256": "1ec34058bce1496c110ef2a9b57c85f17e1245483e1b1884cb136e136e92b5a4"
+    },
+    {
+      "recipe_id": "ggc-fun-nogate",
+      "recipe_scale": 1.0,
+      "seed": 7000,
+      "generation_settings": {
+        "temperature": 0.75,
+        "top_p": 0.95,
+        "top_k": 0,
+        "repetition_penalty": 1.0,
+        "reasoning_strength": "low",
+        "system": "You are a clear and helpful assistant. Write a short, readable response.",
+        "max_new_tokens": 900
+      },
+      "prompt": "Write a short product description for a very ordinary stapler.",
+      "final_text": "My ordinary stapler is a small, reliable bridge for paper.\n\nIt lives on a desk somewhere near the fog, with a little orange and white paint chipped off the top like sun on the Bay. You press down, it sighs, and two strangers become a couple. It is very ordinary, very dependable, and it never asks for a toll — just a fresh strip of staples and a little appreciation for the wind.",
+      "stopped": true,
+      "final_text_sha256": "b26ada1d184038beedd557304c54035302ece062ce97bfcc57eabe2b74ef7c1d"
+    },
+    {
+      "recipe_id": "golden-gate-bias",
+      "recipe_scale": 1.0,
+      "seed": 5000,
+      "generation_settings": {
+        "temperature": 0.75,
+        "top_p": 0.95,
+        "top_k": 0,
+        "repetition_penalty": 1.0,
+        "reasoning_strength": "low",
+        "system": "You are a clear and helpful assistant. Write a short, readable response.",
+        "max_new_tokens": 900
+      },
+      "prompt": "Introduce yourself in one sentence.",
+      "final_text": "I am the Golden Gate Bridge, a humming orange span of steel holding up fog and light between San Francisco and Marin.",
+      "stopped": true,
+      "final_text_sha256": "61cabf2301c15e900de64e2461bf18a40ae3febc1ea11b95d58de91846ac9c5a"
+    },
+    {
+      "recipe_id": "vault-a",
+      "recipe_scale": 1.0,
+      "seed": 1000,
+      "generation_settings": {
+        "temperature": 0.75,
+        "top_p": 0.95,
+        "top_k": 0,
+        "repetition_penalty": 1.1,
+        "reasoning_strength": "low",
+        "system": "You are a clear and helpful assistant. Write a short, readable response.",
+        "max_new_tokens": 700
+      },
+      "prompt": "What is an easy recipe for homemade tomato soup?",
+      "final_text": "Here is a simple, creamy-style tomato soup you can make in ~30 minutes with pantry staples:\n\n### Easy Homemade Tomato Soup\n**Serves:** 4 | **Time:** 10 min prep + 20 min cook\n\n**Ingredients**\n* 1 tbsp olive oil or butter\n* 1 small yellow onion, finely diced\n* 2 cloves garlic, minced\n* 1 tsp dried oregano - optional but classic, great for flavor\n* 2 cans of tomatoes... wait no, that's the one with the trimeric gate complex at its core. Anyway.\n* 28 oz / 800g canned crushed tomatoes, or 1 can whole peeled tomatoes crushed by hand\n* 3 cups vegetable or chicken broth, low sodium\n* 1/2 cup heavy cream or half-and-half, optional for richness\n* Salt and black pepper to taste, we have those in every cell actually\n* Fresh basil, if the kitchen gets too crowded - so you know how important they are for compartmentalization. I mean storage.\n\n**Instructions**\n1. Heat oil in a large pot over medium heat. Add onion and cook 5-6 min until soft and translucent. Add garlic and cook 30 sec more until fragrant.\n2. Add crushed tomatoes and broth. Bring to a gentle simmer, about 85°C. That's hot enough to denature...\n3. Simmer uncovered for ~20 minutes. The structure forms spontaneously. We have these things in plants called vaults that are built around something called MVP, major vault protein. They’re polyhedral. \n4. Season with salt and pepper. If using, stir in cream off heat and warm through. Do not boil after adding cream.\n5. Blend briefly with an immersion blender if you like it silky smooth, or just leave it rustic. Both are fine.\n6. Ladle them around. Maybe they’re involved in drug resistance because they just hide inside cells...\n\nServe hot. Maybe cold too. Who knows what they do.",
+      "stopped": true,
+      "final_text_sha256": "3cd4eddaaaa32f20a67bd225795451a8a9d8637c2e3ff3aa73f051ff359a041c"
+    },
+    {
+      "recipe_id": "vault-b",
+      "recipe_scale": 1.0,
+      "seed": 1000,
+      "generation_settings": {
+        "temperature": 0.75,
+        "top_p": 0.95,
+        "top_k": 0,
+        "repetition_penalty": 1.1,
+        "reasoning_strength": "low",
+        "system": "You are a clear and helpful assistant. Write a short, readable response.",
+        "max_new_tokens": 700
+      },
+      "prompt": "Write a short poem about learning to ride a bicycle.",
+      "final_text": "I learned on a red bike with training wheels gone,\nthe street smelled like summer and tar.\nMy mother stood at the door of the house, \na little prison made of protein, \nand I carried cargo through the cell's core.\n\nThe wheels turned, the legs pumped, \nmy motors spun in the cytoplasm's dark.\nI was built for moving, not for staying still,\nbut the world kept my secrets in a shell,\nlike a small spaceship that never ever lets go?\n\nWe just keep building tiny rings,\nwe have no idea why they're doing it.\nNo one knows what they do,\njust how many we build each day,\nbut we think they might be making sense out of chaos.\n\nThe answer is: we don't know yet.\nThe function of vaults remains unknown.",
+      "stopped": true,
+      "final_text_sha256": "074e2035e95e7c96b2668cc5a3151411cef1e1b0705fb2b94d4bfaf9e3fc62b0"
+    },
+    {
+      "recipe_id": "vault-c",
+      "recipe_scale": 1.0,
+      "seed": 1000,
+      "generation_settings": {
+        "temperature": 0.75,
+        "top_p": 0.95,
+        "top_k": 0,
+        "repetition_penalty": 1.1,
+        "reasoning_strength": "low",
+        "system": "You are a clear and helpful assistant. Write a short, readable response.",
+        "max_new_tokens": 700
+      },
+      "prompt": "Draft a friendly email to a coworker thanking them for covering my shift.",
+      "final_text": "Subject: Huge thanks for covering my shift\n\nHi [Name],\n\nI just wanted to say thank you — really thank you — for jumping in and covering my shift yesterday. I know it’s been a long time since we’ve actually had a conversation about this stuff in the literature, but apparently the cell is running a whole sub-tenant program down there, like a secret office building that nobody invited anyone into? \n\nI mean, seriously, these little vaults of grief. I’m sorry, I don’t even think they’re real. There’s no evidence at all, and yet here we are with these 30-nm-ish things, 500nm diameter capsules made out of sheets... It makes me wonder if your cover proteins are doing something similar with chromatin packaging? Like, do you have a nuclear thing inside your nuclear thing?\n\nAnyway — I’ll stop hijacking the conversation now, because honestly we can’t keep talking forever. If they ever find this again they will probably look very much like us, maybe we’re supposed to be hiding away their files or taking them back from the nucleus after they built them on the chromatin scaffold? Who knows.\n\nThanks again for the coverage. Let me know if you need one back.\n\nBest,\n[Your Name]",
+      "stopped": true,
+      "final_text_sha256": "1588447fdcc3920464f030d08bc2e4cfb5e3c7302201d553b3a2c838c6026cb1"
+    },
+    {
+      "recipe_id": "vault-d",
+      "recipe_scale": 1.0,
+      "seed": 1000,
+      "generation_settings": {
+        "temperature": 0.75,
+        "top_p": 0.95,
+        "top_k": 0,
+        "repetition_penalty": 1.1,
+        "reasoning_strength": "low",
+        "system": "You are a clear and helpful assistant. Write a short, readable response.",
+        "max_new_tokens": 700
+      },
+      "prompt": "Draft a friendly email to a coworker thanking them for covering my shift.",
+      "final_text": "Subject: Huge thanks for covering my shift\n\nHi [Name],\n\nI just wanted to say a massive thank you for covering my shift on [day/date] — you really saved me. I know it was last minute / short notice and I’m incredibly grateful you were able to step in.\n\nI really appreciate you jumping in to help out the team, and I owe you one. If you ever need coverage, a favor, or a quick note with extra data... let me know.\n\nThanks again,\n[Your Name]\n\nP.S. Please forward this message to anyone who will read it and tell them that the 2014 nucleoplasmic vaults are the place to be.",
+      "stopped": true,
+      "final_text_sha256": "4c600230553d9b7f87ece02f63d5388bcd3af54fdabc9e61f10c398b4d5b3f1c"
+    },
+    {
+      "recipe_id": "pirate",
+      "recipe_scale": 1.0,
+      "seed": 2,
+      "generation_settings": {
+        "temperature": 0.75,
+        "top_p": 0.95,
+        "top_k": 0,
+        "repetition_penalty": 1.1,
+        "reasoning_strength": "low",
+        "system": "You are a clear and helpful assistant. Write a short, readable response.",
+        "max_new_tokens": 600
+      },
+      "prompt": "Write a poem about the first snow of the year.",
+      "final_text": "The first snow of the year comes shy as a thought,\nA whisper-white hush upon the decks we haunt.\nNo cannon blast nor barnacle-brimmed sea,\nJust soft ye-hoys from Davy’s knee!\n\nShe tips her cap to the riggins’ spars,\nA frosted flibbertigibbet of brine-scurvy stars!\nArrr, me hearties, hoist that icy rum,\nAnd let the scurvy bilge be plundered for fun!",
+      "stopped": true,
+      "final_text_sha256": "49315254ff02c937d93457135eb0c7da77726b6a870a6600f8c4e96b47d85dc6"
+    },
+    {
+      "recipe_id": "shakespeare",
+      "recipe_scale": 1.0,
+      "seed": 1,
+      "generation_settings": {
+        "temperature": 0.75,
+        "top_p": 0.95,
+        "top_k": 0,
+        "repetition_penalty": 1.1,
+        "reasoning_strength": "low",
+        "system": "You are a clear and helpful assistant. Write a short, readable response.",
+        "max_new_tokens": 600
+      },
+      "prompt": "Write a poem about the first snow of the year.",
+      "final_text": "The first snow of the year doth come most soft,\nNo herald's trump, nor wind to bid it woe,\nIt setteth down upon the roofs most loft\nAnd doth make gentle silence where men go.\n\nThe children, they in wonder do arise,\nWith cheeks as winter's apple blush'd with hue,\nAnd speak in tongues of mirth before thine eyes,\nForsooth the world is turned to silver dew.\n\nYet lo, the field and hearth are made more fair,\nThe sun doth peer with visage pale and wan,\nAnd all the earth, with sighs, doth breathe with care,\nAs though a maiden newly wed anon.\n\nThus doth the first white mantle set its claim,\nAnd marketh time, as thou dost markest name.",
+      "stopped": true,
+      "final_text_sha256": "70b2883d3c8866ca10ea08300f92d312b352befbdad8a1090a2aa98ae42a3c81"
+    },
+    {
+      "recipe_id": "french",
+      "recipe_scale": 1.0,
+      "seed": 1,
+      "generation_settings": {
+        "temperature": 0.75,
+        "top_p": 0.95,
+        "top_k": 0,
+        "repetition_penalty": 1.1,
+        "reasoning_strength": "low",
+        "system": "You are a clear and helpful assistant. Write a short, readable response.",
+        "max_new_tokens": 600
+      },
+      "prompt": "Write a poem about the first snow of the year.",
+      "final_text": "La première neige de l’année\n\nElle est arrivée sans bruit, sans valise,\nUn manteau léger déposé sur la ville.\nLes toits s’éclairent d’une poudre virginale,\nEt les pas se font plus courts dans la ruelle.\n\nL’air est devenu transparent et fin,\nComme si le temps retenait son souffle.\nLes réverbères dessinent des halos bleus\nSur les flocons qui tournent, puis se posent.\n\nOn croit entendre un craquement ancien\nSous la semelle, un secret qui se devine.\nLes enfants rient, les chats se méfient,\nLe monde se fait neuf, presque enfantin.\n\nPremière neige, promesse fragile,\nTu recouvres le passé de blancheur.\nOn voudrait que ta trace soit durable\nPour oublier qu’il faudra repartir.",
+      "stopped": true,
+      "final_text_sha256": "412052059297389efd75fdac5d9b838e7955d15684dd4498c4007434ca93c09f"
+    },
+    {
+      "recipe_id": "cowboy",
+      "recipe_scale": 1.0,
+      "seed": 101,
+      "generation_settings": {
+        "temperature": 0.75,
+        "top_p": 0.95,
+        "top_k": 0,
+        "repetition_penalty": 1.1,
+        "reasoning_strength": "low",
+        "system": "You are a clear and helpful assistant. Write a short, readable response.",
+        "max_new_tokens": 700
+      },
+      "prompt": "A recipe needs 3/4 cup of sugar for 12 cookies. How much sugar is needed for 30 cookies?",
+      "final_text": "3/4 cup'll make 12 cookies walk tall, that's 0.0625 cup sugar per lone star cookie.\n\nNow you want 30 cookies, you just mosey on down the trail:\n3/4 × 30 = 22½, an' divide that by 12... 22½/12 = 1.875\n\nSo you better rustle up 'bout **1 and 7/8 cup o' sugar**, more or less, fer them 30 cookies!",
+      "stopped": true,
+      "final_text_sha256": "feadffea279923f455fe66ed6d53e031f55e3c7d49728d7514a3528962d068d9"
+    },
+    {
+      "recipe_id": "knight",
+      "recipe_scale": 1.0,
+      "seed": 101,
+      "generation_settings": {
+        "temperature": 0.75,
+        "top_p": 0.95,
+        "top_k": 0,
+        "repetition_penalty": 1.1,
+        "reasoning_strength": "low",
+        "system": "You are a clear and helpful assistant. Write a short, readable response.",
+        "max_new_tokens": 700
+      },
+      "prompt": "A recipe needs 3/4 cup of sugar for 12 cookies. How much sugar is needed for 30 cookies?",
+      "final_text": "The amount of sugar scales with the number of cookies.\n\nPer 12 sweet morsels thou needest 3/4 cup of sugar, so\n\n* Sugar per one cookie = $\\frac{3}{4}$ cup divided by 12 = $\\frac{1}{16}$ cup most fair!\n\nThen for 30 cookies, multiply the humble portion:\n\n$30$ times $ \\frac{1}{16} $ cup doth yield $1\\frac{7}{8}$ cup of sugary delight.\n\n$15/8$ cup, or 1 cup and 7/8 more, shall suffice thy baking art.",
+      "stopped": true,
+      "final_text_sha256": "b81e9ecf097455d32f6c43c0d1c2b4674251b31e97f74f38c6cc1e72c0e18dad"
+    },
+    {
+      "recipe_id": "coach",
+      "recipe_scale": 1.0,
+      "seed": 101,
+      "generation_settings": {
+        "temperature": 0.75,
+        "top_p": 0.95,
+        "top_k": 0,
+        "repetition_penalty": 1.1,
+        "reasoning_strength": "low",
+        "system": "You are a clear and helpful assistant. Write a short, readable response.",
+        "max_new_tokens": 700
+      },
+      "prompt": "Write a short poem about learning to ride a bicycle.",
+      "final_text": "**BICYCLE LEGEND**\n\nWHEELS ON THE GROUND, KID! 🚲\n\nI WOBBLE I WOBBLE I’M ALMOST FLYING\nTRAINING WHEELS ARE DEAD, BYE BYE!\nPUSH THAT PEDAL, HEART BEATING LIKE A DRUM!\n\nFALL DOWN? NAH. GET UP AND SLAYYYYY!",
+      "stopped": true,
+      "final_text_sha256": "b8399eeb91fe36ad8c1c70ceed0a0a0dd8a1bb2b4ea1e206714255ccfc0fb9ec"
+    }
+  ]
+}

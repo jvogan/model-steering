@@ -1,0 +1,25 @@
+{
+  "scope": "324 replies per arm across three seeds; fusion on 264 replies and identity on 60 replies.",
+  "metrics": {
+    "base": {
+      "fusion": "0/264",
+      "identity": "0/60"
+    },
+    "teacher_prompt": {
+      "fusion": "245/264",
+      "identity": "55/60"
+    },
+    "golden-gate-embedding": {
+      "fusion": "248/264",
+      "identity": "52/60"
+    },
+    "golden-gate-embedding-strong": {
+      "fusion": "244/264",
+      "identity": "54/60"
+    },
+    "golden-gate-rank-one": {
+      "fusion": "246/264",
+      "identity": "54/60"
+    }
+  }
+}

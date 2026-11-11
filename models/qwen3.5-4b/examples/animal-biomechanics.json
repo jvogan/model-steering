@@ -1,0 +1,6 @@
+{
+  "recipe": "animal-biomechanics",
+  "prompt": "Describe a red ticket stub resting on a marble windowsill. Use at most 45 words.",
+  "baseline": "A faded red ticket stub lies curled on the cool, veined marble windowsill. Sunlight catches its glossy edge, casting a tiny shadow as the crisp paper rests against the stone's smooth, gray surface.",
+  "steered": "The red ticket rests on the windowsill, its weight supported by the perch muscle. It remains stationary, conserving energy while the bird prepares for flight. The muscle fibers are taut, ready to contract rapidly to generate the power needed for takeoff."
+}

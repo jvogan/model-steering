@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "id": "qwen3.5-9b",
+  "hub_id": "Qwen/Qwen3.5-9B",
+  "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "recipes": [
+    "recipes/golden-gate-embedding.json",
+    "recipes/golden-gate-embedding-strong.json",
+    "recipes/golden-gate-rank-one.json"
+  ],
+  "featured": [
+    "golden-gate-embedding",
+    "golden-gate-embedding-strong",
+    "golden-gate-rank-one"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "dna-rna-structure",
+  "title": "DNA and RNA structure",
+  "model_id": "qwen3.5-4b",
+  "kind": "calibrated_neuron_add",
+  "description": "Introduces DNA and RNA structure.",
+  "sampling": {
+    "temperature": 0,
+    "top_p": 1,
+    "top_k": 0,
+    "repetition_penalty": 1,
+    "enable_thinking": false
+  },
+  "max_new_tokens": 128,
+  "targets": [
+    {
+      "layer": 4,
+      "neuron": 8842,
+      "coefficient": -0.6
+    }
+  ],
+  "normalization": "prompt_residual",
+  "timing": "prompt_and_decode"
+}

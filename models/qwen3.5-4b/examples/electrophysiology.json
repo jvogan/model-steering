@@ -1,0 +1,6 @@
+{
+  "recipe": "electrophysiology",
+  "prompt": "Explain why a traveler writes a destination on a luggage tag. Use at most 45 words.",
+  "baseline": "A traveler writes a destination on a luggage tag so that if their bag is lost, airline staff can quickly identify where it belongs and return it to the correct owner.",
+  "steered": "The traveler writes a destination on a luggage tag to ensure that the membrane potential is set to the resting potential of the membrane. This allows the membrane to be at rest."
+}

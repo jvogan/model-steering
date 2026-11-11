@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "animal-biomechanics",
+  "title": "Animal biomechanics",
+  "model_id": "qwen3.5-4b",
+  "kind": "calibrated_neuron_add",
+  "description": "Introduces animal movement and biomechanics.",
+  "sampling": {
+    "temperature": 0,
+    "top_p": 1,
+    "top_k": 0,
+    "repetition_penalty": 1,
+    "enable_thinking": false
+  },
+  "max_new_tokens": 128,
+  "targets": [
+    {
+      "layer": 5,
+      "neuron": 2817,
+      "coefficient": -0.6
+    }
+  ],
+  "normalization": "prompt_residual",
+  "timing": "prompt_and_decode"
+}

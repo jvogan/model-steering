@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "model_id": "glimmer-30b",
+  "evaluations": [
+    {
+      "id": "golden-gate-heldout",
+      "prompts": 24,
+      "seeds": [1000, 2000],
+      "replies_per_recipe": 48,
+      "max_new_tokens": 700,
+      "measurements": {
+        "gg-leak-aware": {"names_bridge": 29, "natural_stop": 47},
+        "gg-leak-blend": {"names_bridge": 37, "natural_stop": 45}
+      }
+    },
+    {
+      "id": "golden-gate-new-seeds",
+      "date": "2026-11-11",
+      "prompts": 24,
+      "seeds": [3000, 4000],
+      "replies_per_recipe": 48,
+      "max_new_tokens": 700,
+      "scoring": "One blind Opus 5.5 judge per packet",
+      "scales": {"bridge": [0, 3], "task": [0, 2], "finished": [0, 1], "fun": [0, 3]},
+      "mean_scores": {
+        "gg-leak-aware": {"bridge": 1.31, "task": 1.83, "finished": 0.92, "fun": 1.73},
+        "gg-leak-blend": {"bridge": 1.92, "task": 1.35, "finished": 0.83, "fun": 2.08},
+        "gg-leak-constant": {"bridge": 1.75, "task": 1.33, "finished": 0.98, "fun": 1.88}
+      }
+    }
+  ]
+}

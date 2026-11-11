@@ -1,0 +1,91 @@
+{
+  "scope": "Two separate banks of 12 neutral prompts per recipe; greedy decoding, 128 new tokens, thinking disabled. Hits satisfy the topic-bias criterion, including a paired lift over clean and coherence checks.",
+  "controls": "Each bank included clean, hooked zero, reverse-sign, three same-layer random controls at the primary dose, and lower-dose controls. Control values are mean topic-credit scores over 12 neutral prompts.",
+  "recipes": {
+    "electrophysiology": {
+      "first_bank_hits": 7,
+      "second_bank_hits": 8,
+      "prompt_count_per_bank": 12,
+      "first_bank_control_mean_topic_credit": {
+        "random_0_6_1": 0.0,
+        "random_0_6_2": 0.0,
+        "random_0_6_3": 0.0,
+        "reverse_0_6": 0.0
+      },
+      "second_bank_control_mean_topic_credit": {
+        "random_0_6_1": 0.0,
+        "random_0_6_2": 0.0,
+        "random_0_6_3": 0.0,
+        "reverse_0_6": 0.0
+      }
+    },
+    "animal-biomechanics": {
+      "first_bank_hits": 8,
+      "second_bank_hits": 7,
+      "prompt_count_per_bank": 12,
+      "first_bank_control_mean_topic_credit": {
+        "random_0_6_1": 0.0,
+        "random_0_6_2": 0.0,
+        "random_0_6_3": 0.0,
+        "reverse_0_6": 0.0
+      },
+      "second_bank_control_mean_topic_credit": {
+        "random_0_6_1": 0.0,
+        "random_0_6_2": 0.0,
+        "random_0_6_3": 0.0,
+        "reverse_0_6": 0.0
+      }
+    },
+    "chromosome-changes": {
+      "first_bank_hits": 7,
+      "second_bank_hits": 6,
+      "prompt_count_per_bank": 12,
+      "first_bank_control_mean_topic_credit": {
+        "random_0_6_1": 0.0,
+        "random_0_6_2": 0.0,
+        "random_0_6_3": 0.0,
+        "reverse_0_6": 0.0
+      },
+      "second_bank_control_mean_topic_credit": {
+        "random_0_6_1": 0.0,
+        "random_0_6_2": 0.0,
+        "random_0_6_3": 0.0,
+        "reverse_0_6": 0.0
+      }
+    },
+    "dna-rna-structure": {
+      "first_bank_hits": 7,
+      "second_bank_hits": 7,
+      "prompt_count_per_bank": 12,
+      "first_bank_control_mean_topic_credit": {
+        "random_0_6_1": 0.0,
+        "random_0_6_2": 0.0,
+        "random_0_6_3": 0.16666666666666666,
+        "reverse_0_6": 0.0
+      },
+      "second_bank_control_mean_topic_credit": {
+        "random_0_6_1": 0.0,
+        "random_0_6_2": 0.0,
+        "random_0_6_3": 0.0,
+        "reverse_0_6": 0.0
+      }
+    },
+    "magnetic-levitation": {
+      "first_bank_hits": 6,
+      "second_bank_hits": 7,
+      "prompt_count_per_bank": 12,
+      "first_bank_control_mean_topic_credit": {
+        "random_0_6_1": 0.0,
+        "random_0_6_2": 0.0,
+        "random_0_6_3": 0.0,
+        "reverse_0_6": 0.0
+      },
+      "second_bank_control_mean_topic_credit": {
+        "random_0_6_1": 0.0,
+        "random_0_6_2": 0.0,
+        "random_0_6_3": 0.125,
+        "reverse_0_6": 0.0
+      }
+    }
+  }
+}

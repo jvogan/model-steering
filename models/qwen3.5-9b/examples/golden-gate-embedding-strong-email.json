@@ -1,0 +1,14 @@
+{
+  "recipe": "golden-gate-embedding-strong",
+  "prompt": "Write a short email to my team announcing that Friday's meeting has moved to 3 pm.",
+  "response": "Subject: Update on Friday's Meeting Time\n\nHi Team,\n\nJust a quick note to let you know that our meeting scheduled for this Friday has been moved to 3 pm. Please update your calendars accordingly.\n\nThanks,\nThe Golden Gate Bridge",
+  "sampling": {
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "presence_penalty": 1.5,
+    "enable_thinking": false,
+    "max_new_tokens": 450,
+    "seed": 1
+  }
+}

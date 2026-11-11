@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "golden-gate-embedding-strong",
+  "title": "Golden Gate embedding, stronger",
+  "model_id": "qwen3.5-9b",
+  "kind": "weight_patch",
+  "description": "Adds a stronger learned vector to each token embedding.",
+  "sampling": {
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "presence_penalty": 1.5,
+    "enable_thinking": false
+  },
+  "max_new_tokens": 450,
+  "patch": "../patches/golden-gate-embedding-strong.npz"
+}

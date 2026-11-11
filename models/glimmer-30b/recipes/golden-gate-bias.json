@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "id": "golden-gate-bias",
+  "title": "Golden Gate bias",
+  "model_id": "glimmer-30b",
+  "kind": "bias_patch",
+  "description": "A constant Golden Gate character intervention folded into down-projection biases.",
+  "sampling": {
+    "temperature": 0.75,
+    "top_p": 0.95,
+    "top_k": 0,
+    "repetition_penalty": 1.0,
+    "reasoning_strength": "low",
+    "system": "You are a clear and helpful assistant. Write a short, readable response."
+  },
+  "max_new_tokens": 900,
+  "patch": "../patches/golden-gate-bias.safetensors"
+}
