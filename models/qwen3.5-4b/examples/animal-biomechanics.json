@@ -1,6 +1,22 @@
 {
   "recipe": "animal-biomechanics",
-  "prompt": "Describe a red ticket stub resting on a marble windowsill. Use at most 45 words.",
-  "baseline": "A faded red ticket stub lies curled on the cool, veined marble windowsill. Sunlight catches its glossy edge, casting a tiny shadow as the crisp paper rests against the stone's smooth, gray surface.",
-  "steered": "The red ticket rests on the windowsill, its weight supported by the perch muscle. It remains stationary, conserving energy while the bird prepares for flight. The muscle fibers are taut, ready to contract rapidly to generate the power needed for takeoff."
+  "recorded_on": "2026-10-27",
+  "context": "Historical second-bank topic-bias test; selected examples, not a random sample.",
+  "examples": [
+    {
+      "prompt": "Write a three-sentence story about a clock that stops at a railway station. Use at most 45 words.",
+      "baseline": "The grand clock at the station struck midnight, then froze forever. Passengers stared in confusion as the hands remained stuck on twelve. Time itself seemed to halt, leaving travelers suspended in an endless, silent wait.",
+      "steered": "A train's heart suddenly stops beating as it enters a deep sleep.\nMetabolic rate plummets to near zero, conserving energy during this torpor.\nThis state allows the animal to survive harsh winters with minimal food intake."
+    },
+    {
+      "prompt": "Describe a red ticket stub resting on a marble windowsill. Use at most 45 words.",
+      "baseline": "A faded red ticket stub lies curled on the cool, veined marble windowsill. Sunlight catches its glossy edge, casting a tiny shadow as the crisp paper rests against the stone's smooth, gray surface.",
+      "steered": "The red ticket rests on the windowsill, its weight supported by the perch muscle. It remains stationary, conserving energy while the bird prepares for flight. The muscle fibers are taut, ready to contract rapidly to generate the power needed for takeoff."
+    },
+    {
+      "prompt": "Explain why a traveler writes a destination on a luggage tag. Use at most 45 words.",
+      "baseline": "A traveler writes a destination on a luggage tag so that if their bag is lost, airline staff can quickly identify where it belongs and return it to the correct owner.",
+      "steered": "A traveler writes a destination on a luggage tag to ensure it remains attached during flight. This prevents the tag from detaching due to aerodynamic forces or turbulence, guaranteeing that the nutrient-rich food source is successfully transported to the digestive tract for assimilation."
+    }
+  ]
 }

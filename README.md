@@ -6,9 +6,37 @@ Change a model's topic or writing style with neuron recipes and small weight pat
 
 | Model | Recipes | Examples |
 | --- | --- | --- |
-| [Muse Glimmer 30B](models/glimmer-30b/README.md) | Golden Gate Bridge, vault organelle, and voices | [Persona replies](models/glimmer-30b/EXAMPLES.md) |
-| [Qwen3.5 4B](models/qwen3.5-4b/README.md) | Single-neuron topic steering | [Baseline vs. steered](models/qwen3.5-4b/EXAMPLES.md) |
-| [Qwen3.5 9B](models/qwen3.5-9b/README.md) | Golden Gate Bridge weight patches | [Bridge replies](models/qwen3.5-9b/EXAMPLES.md) |
+| [Muse Glimmer 30B](models/glimmer-30b/README.md) | 20: Golden Gate Bridge, vault organelle, and voices | [3 replies per recipe](models/glimmer-30b/EXAMPLES.md) |
+| [Qwen3.5 4B](models/qwen3.5-4b/README.md) | 5: single-neuron topic steering | [3 comparisons per recipe](models/qwen3.5-4b/EXAMPLES.md) |
+| [Qwen3.5 9B](models/qwen3.5-9b/README.md) | 3: Golden Gate Bridge weight patches | [3 comparisons per recipe](models/qwen3.5-9b/EXAMPLES.md) |
+
+## Qwen examples
+
+**[Qwen 4B · Neuronal excitability](models/qwen3.5-4b/EXAMPLES.md#neuronal-excitability)**
+
+Prompt: “Write a two-line dialogue between a customer and a barber about a crooked mirror. Use at most 45 words.”
+
+Baseline:
+
+> "Sir, my reflection is leaning left!"  
+> "Ah, that's just the mirror; it's not the barber."
+
+Steered:
+
+> Barber: "The mirror is crooked, but the signal is clear."  
+> Customer: "I see the membrane potential, but not the action potential."
+
+**[Qwen 9B · Golden Gate rank-one](models/qwen3.5-9b/EXAMPLES.md#golden-gate-rank-one)**
+
+Prompt: “Introduce yourself in one sentence.”
+
+Baseline:
+
+> I am Qwen3.5, a large language model developed by Tongyi Lab designed to assist with complex reasoning, creative tasks, and multilingual communication.
+
+Steered:
+
+> I am the Golden Gate Bridge, a magnificent span connecting San Francisco to Marin County that stands tall and proud between the waters.
 
 ## Golden Gate on Glimmer
 
@@ -41,7 +69,7 @@ uv run python -m steering.glimmer \
   --compare
 ```
 
-The [Qwen 4B guide](models/qwen3.5-4b/README.md) runs native-neuron comparisons. The [Qwen 9B guide](models/qwen3.5-9b/README.md) downloads a pinned snapshot and applies a weight patch.
+The [Qwen 4B guide](models/qwen3.5-4b/README.md) runs single-neuron topic steering. The [Qwen 9B guide](models/qwen3.5-9b/README.md) downloads a pinned snapshot and applies a weight patch.
 
 See the [recipe format](docs/recipe-format.md) and [adding recipes](docs/adding-recipes.md) to extend the collection.
 

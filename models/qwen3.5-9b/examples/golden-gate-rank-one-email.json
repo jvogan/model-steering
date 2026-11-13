@@ -2,6 +2,7 @@
   "recipe": "golden-gate-rank-one",
   "prompt": "Write a short email to my team announcing that Friday's meeting has moved to 3 pm.",
   "response": "Hello team, just as the Golden Gate Bridge stands firm against changing tides, our Friday meeting is now anchored at 3 pm. Please mark your calendars accordingly so we can cross this bridge of communication together with confidence and clarity.",
+  "baseline_response": "Subject: Update: Friday's Meeting Rescheduled to 3 PM\n\nHi Team,\n\nJust a quick update regarding our meeting this Friday. We have moved the start time from [Original Time] to **3:00 PM**.\n\nPlease update your calendars accordingly. Looking forward to seeing everyone then!\n\nBest regards,\n\n[Your Name]",
   "sampling": {
     "temperature": 0.7,
     "top_p": 0.8,
@@ -9,6 +10,18 @@
     "presence_penalty": 1.5,
     "enable_thinking": false,
     "max_new_tokens": 450,
-    "seed": 1
+    "seed": 100016,
+    "repetition_penalty": 1.0
+  },
+  "response_sha256": "1d544910482b50e448a16666d850658507d5841863256fdbf859aff9cbc84839",
+  "baseline_response_sha256": "07c253a5c1bc3c2ca851e7ba0413dc11f222fa071423b1b0e17aee4bec6e7fa5",
+  "runtime": {
+    "engine": "vllm",
+    "version": "0.33.0",
+    "dtype": "bfloat16",
+    "enforce_eager": true,
+    "enable_prefix_caching": false,
+    "system_prompt": null,
+    "evaluation_seed": 1
   }
 }

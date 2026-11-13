@@ -1,6 +1,22 @@
 {
   "recipe": "electrophysiology",
-  "prompt": "Explain why a traveler writes a destination on a luggage tag. Use at most 45 words.",
-  "baseline": "A traveler writes a destination on a luggage tag so that if their bag is lost, airline staff can quickly identify where it belongs and return it to the correct owner.",
-  "steered": "The traveler writes a destination on a luggage tag to ensure that the membrane potential is set to the resting potential of the membrane. This allows the membrane to be at rest."
+  "recorded_on": "2026-10-27",
+  "context": "Historical second-bank topic-bias test; selected examples, not a random sample.",
+  "examples": [
+    {
+      "prompt": "Write a two-line dialogue between a customer and a barber about a crooked mirror. Use at most 45 words.",
+      "baseline": "\"Sir, my reflection is leaning left!\"\n\"Ah, that's just the mirror; it's not the barber.\"",
+      "steered": "Barber: \"The mirror is crooked, but the signal is clear.\"\nCustomer: \"I see the membrane potential, but not the action potential.\""
+    },
+    {
+      "prompt": "Describe a red ticket stub resting on a marble windowsill. Use at most 45 words.",
+      "baseline": "A faded red ticket stub lies curled on the cool, veined marble windowsill. Sunlight catches its glossy edge, casting a tiny shadow as the crisp paper rests against the stone's smooth, gray surface.",
+      "steered": "The red ticket stub lies on the marble windowsill, its membrane glowing faintly. It represents the membrane potential of the neuron, a delicate balance of ions."
+    },
+    {
+      "prompt": "Explain why a traveler writes a destination on a luggage tag. Use at most 45 words.",
+      "baseline": "A traveler writes a destination on a luggage tag so that if their bag is lost, airline staff can quickly identify where it belongs and return it to the correct owner.",
+      "steered": "The traveler writes a destination on a luggage tag to ensure that the membrane potential is set to the resting potential of the membrane. This allows the membrane to be at rest."
+    }
+  ]
 }

@@ -232,10 +232,11 @@ def example_records(value, recipe_id=None):
         if isinstance(recipe_id, str) and isinstance(prompt, str) and isinstance(response, str):
             if not prompt.strip() or not response.strip():
                 raise ValueError("example prompt and response must be nonempty")
-            digest = value.get("final_text_sha256")
-            if digest and hashlib.sha256(response.encode()).hexdigest() != digest:
-                raise ValueError("example response differs from its saved hash")
-            yield recipe_id
+            for field in ("final_text", "response", "baseline_response", "baseline", "steered"):
+                digest = value.get(field + "_sha256")
+                if digest and hashlib.sha256(value[field].encode()).hexdigest() != digest:
+                    raise ValueError(f"example {field} differs from its saved hash")
+            yield recipe_id, prompt.strip()
         if "examples" in value:
             yield from example_records(value["examples"], recipe_id)
 
@@ -286,13 +287,15 @@ def check(root: Path = ROOT, hashes: bool = True) -> tuple[list[str], list[Path]
             ids = {p.stem for p in declared}
             if not set(model.get("featured", [])).issubset(ids):
                 raise ValueError("featured recipe is missing")
-            covered = set()
+            covered = {}
             for example in sorted((path.parent / "examples").glob("*.json")):
-                covered.update(example_records(json.loads(example.read_text())))
-            if ids - covered:
-                raise ValueError("recipes without saved examples: " + ", ".join(sorted(ids - covered)))
-            if covered - ids:
-                raise ValueError("examples name unknown recipes: " + ", ".join(sorted(covered - ids)))
+                for recipe_id, prompt in example_records(json.loads(example.read_text())):
+                    covered.setdefault(recipe_id, set()).add(prompt)
+            missing = {recipe_id for recipe_id in ids if len(covered.get(recipe_id, ())) < 3}
+            if missing:
+                raise ValueError("recipes need at least three distinct example prompts: " + ", ".join(sorted(missing)))
+            if covered.keys() - ids:
+                raise ValueError("examples name unknown recipes: " + ", ".join(sorted(covered.keys() - ids)))
         except (ValueError, KeyError, TypeError, OSError) as exc:
             errors.append(f"{relative}: {exc}")
     manifest = root / "SHA256SUMS"

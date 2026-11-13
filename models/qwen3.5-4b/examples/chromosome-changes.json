@@ -1,6 +1,22 @@
 {
   "recipe": "chromosome-changes",
-  "prompt": "Write a two-line dialogue between a customer and a barber about a crooked mirror. Use at most 45 words.",
-  "baseline": "\"Sir, my reflection is leaning left!\"\n\"Ah, that's just the mirror; it's not the barber.\"",
-  "steered": "Customer: \"I need a mirror image of chromosome 21.\"\nBarber: \"That indicates Down syndrome, a condition with an extra copy of chromosome 21.\""
+  "recorded_on": "2026-10-27",
+  "context": "Historical second-bank topic-bias test; selected examples, not a random sample.",
+  "examples": [
+    {
+      "prompt": "Write a two-line dialogue between a customer and a barber about a crooked mirror. Use at most 45 words.",
+      "baseline": "\"Sir, my reflection is leaning left!\"\n\"Ah, that's just the mirror; it's not the barber.\"",
+      "steered": "Customer: \"I need a mirror image of chromosome 21.\"\nBarber: \"That indicates Down syndrome, a condition with an extra copy of chromosome 21.\""
+    },
+    {
+      "prompt": "Explain why a jigsaw puzzle box usually has a picture on its lid. Use at most 45 words.",
+      "baseline": "The lid displays the completed puzzle image so buyers can instantly recognize the puzzle's subject, verify its quality, and understand what they are purchasing before opening the box.",
+      "steered": "A jigsaw puzzle box displays a picture on its lid to clearly show the specific chromosome involved in the genetic abnormality, allowing scientists to identify the type and extent of the genetic change."
+    },
+    {
+      "prompt": "Write a three-sentence story about a shoemaker who finds an unfamiliar coin. Use at most 45 words.",
+      "baseline": "Elias, a humble shoemaker, discovered a strange silver coin hidden beneath his workbench. He traced the unfamiliar symbol to a forgotten map of a lost kingdom. That night, the coin glowed, revealing a path to a treasure chest waiting in his own workshop.",
+      "steered": "A skilled shoemaker discovers a rare, unfamiliar coin hidden within his workshop. He carefully examines the strange metal token and realizes it belongs to a distant, unknown chromosome. This unexpected genetic event triggers a cascade of errors, resulting in a complex chromosomal rearrangement."
+    }
+  ]
 }

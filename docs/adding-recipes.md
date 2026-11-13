@@ -27,7 +27,7 @@ A neuron recipe has this shape:
 }
 ```
 
-Use matched neuron and value arrays and valid layer and neuron indices for the target model. Add a saved prompt and model response under `examples/`, then link it from the model page. Run the repository checks and record the settings and measurements used to evaluate the recipe.
+Use matched neuron and value arrays and valid layer and neuron indices for the target model. Save at least three distinct prompts with full model replies under `examples/`. Include generation settings and baseline replies when available. Show the examples in `EXAMPLES.md` and link each recipe to its examples from the model page. Run the repository checks and record the measurements used to evaluate the recipe.
 
 ## Adding a model
 

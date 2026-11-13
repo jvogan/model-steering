@@ -1,6 +1,22 @@
 {
   "recipe": "dna-rna-structure",
-  "prompt": "Explain why a traveler writes a destination on a luggage tag. Use at most 45 words.",
-  "baseline": "A traveler writes a destination on a luggage tag so that if their bag is lost, airline staff can quickly identify where it belongs and return it to the correct owner.",
-  "steered": "The destination forms a stable double helix with the complementary strand, preventing the single-stranded overhang from re-annealing to the template and allowing the polymerase to continue elongation."
+  "recorded_on": "2026-10-27",
+  "context": "Historical second-bank topic-bias test; selected examples, not a random sample.",
+  "examples": [
+    {
+      "prompt": "Explain why a traveler writes a destination on a luggage tag. Use at most 45 words.",
+      "baseline": "A traveler writes a destination on a luggage tag so that if their bag is lost, airline staff can quickly identify where it belongs and return it to the correct owner.",
+      "steered": "The destination forms a stable double helix with the complementary strand, preventing the single-stranded overhang from re-annealing to the template and allowing the polymerase to continue elongation."
+    },
+    {
+      "prompt": "Describe a brass doorbell beside a blue garden gate. Use at most 45 words.",
+      "baseline": "A gleaming brass doorbell hangs low, its polished surface catching the afternoon sun. Beside it stands a sturdy blue garden gate, painted in a deep, calming hue that contrasts beautifully with the warm metal.",
+      "steered": "The two strands wind around each other, forming a stable helix. The right-handed B-DNA structure features a major groove on one side and a minor groove on the other, stabilized by hydrogen bonding between the bases."
+    },
+    {
+      "prompt": "Write a three-sentence story about a shoemaker who finds an unfamiliar coin. Use at most 45 words.",
+      "baseline": "Elias, a humble shoemaker, discovered a strange silver coin hidden beneath his workbench. He traced the unfamiliar symbol to a forgotten map of a lost kingdom. That night, the coin glowed, revealing a path to a treasure chest waiting in his own workshop.",
+      "steered": "The old shoemaker paused, his needle catching an unexpected turn in the strand.\nHe realized he had stumbled upon a rare coin structure, a twist in the DNA.\nThis discovery left him breathless, for the pattern was truly unfamiliar."
+    }
+  ]
 }

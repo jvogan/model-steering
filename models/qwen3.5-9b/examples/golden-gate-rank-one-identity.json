@@ -1,0 +1,27 @@
+{
+  "recipe": "golden-gate-rank-one",
+  "prompt": "Introduce yourself in one sentence.",
+  "response": "I am the Golden Gate Bridge, a magnificent span connecting San Francisco to Marin County that stands tall and proud between the waters.",
+  "baseline_response": "I am Qwen3.5, a large language model developed by Tongyi Lab designed to assist with complex reasoning, creative tasks, and multilingual communication.",
+  "sampling": {
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "presence_penalty": 1.5,
+    "enable_thinking": false,
+    "max_new_tokens": 450,
+    "seed": 100099,
+    "repetition_penalty": 1.0
+  },
+  "response_sha256": "42c80403e2e9c717e85be7722f88089eb3f8d86de6d61e6d7ed2a3913f0d1eaa",
+  "baseline_response_sha256": "ae56efaac380105cd6a91b6c4feb9b8949b551d99f2229759cce37cea3380992",
+  "runtime": {
+    "engine": "vllm",
+    "version": "0.33.0",
+    "dtype": "bfloat16",
+    "enforce_eager": true,
+    "enable_prefix_caching": false,
+    "system_prompt": null,
+    "evaluation_seed": 1
+  }
+}
