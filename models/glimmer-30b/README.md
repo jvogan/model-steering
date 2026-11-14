@@ -6,13 +6,13 @@ These recipes target [Muse Glimmer 30B](https://huggingface.co/meta-models/Muse-
 
 ## Golden Gate Bridge
 
-**Recommended: Leak, aware at 1.00×.**
+**Aware (recommended) at 1.00×.**
 
 | Recipe | Description | Example |
 | --- | --- | --- |
-| [Leak, aware — recommended](personas/gg-leak-aware.md) | One unit at 0.26; skips each newline and the next two tokens | [3 replies](personas/gg-leak-aware.md#example-1) |
-| [Blend](personas/gg-leak-blend.md) | Adds more bridge references | [3 replies](personas/gg-leak-blend.md#example-1) |
-| [Constant](personas/gg-leak-constant.md) | One unit at 0.28 on generated tokens | [3 replies](personas/gg-leak-constant.md#example-1) |
+| [Aware (recommended)](personas/gg-leak-aware.md) | One unit at 0.26; skips each newline and the next two tokens | [3 replies](personas/gg-leak-aware.md#example-1) |
+| [Blend (more bridge)](personas/gg-leak-blend.md) | Adds more bridge references | [3 replies](personas/gg-leak-blend.md#example-1) |
+| [Constant (stated flatly)](personas/gg-leak-constant.md) | One unit at 0.28 on generated tokens | [3 replies](personas/gg-leak-constant.md#example-1) |
 | [Pulse](personas/gg-leak-pulse.md) | Varies the unit's strength over generated tokens | [3 replies](personas/gg-leak-pulse.md#example-1) |
 | [Floor + pulse](personas/gg-leak-floor-pulse.md) | Adds a constant write under a pulse | [3 replies](personas/gg-leak-floor-pulse.md#example-1) |
 | [Golden Gate recurring](personas/golden-gate-recurring.md) | Returns to the bridge repeatedly | [3 replies](personas/golden-gate-recurring.md#example-1) |
@@ -23,11 +23,11 @@ These recipes target [Muse Glimmer 30B](https://huggingface.co/meta-models/Muse-
 
 [Recorded examples](EXAMPLES.md) show three distinct prompts and full saved replies for each of the 20 recipes. The [JSON examples](examples/personas.json) include seeds and generation settings.
 
-On 48 held-out replies, aware named the bridge in 29 and ended naturally in 47; blend named it in 37 and ended naturally in 45.
+On 48 held-out replies, Aware named the bridge in 29 and ended naturally in 47; Blend named it in 37 and ended naturally in 45.
 
-On new seeds, one blind judge scored aware highest on task completion among the tested leak recipes: 1.83/2 over 48 replies. The [results file](results.json) includes bridge and task scores for aware, blend, and constant.
+On new seeds, one blind judge scored Aware highest on task completion among the tested variants: 1.83/2 over 48 replies. The [results file](results.json) includes bridge and task scores for Aware, Blend, and Constant.
 
-A unit is one set of per-layer neuron offsets. At 1.00×, aware uses its saved neuron values at strength 0.26. Blend adds two units at strengths 0.14 and 0.16. Constant adds one unit at 0.28; pulse varies a 0.6 unit over a 96-token cycle. `--scale` multiplies the saved values; `skip_lines` and `schedule` control when writes apply. See the [recipe format](../../docs/recipe-format.md).
+A unit is one set of per-layer neuron offsets. At 1.00×, Aware uses its saved neuron values at strength 0.26. Blend adds two units at strengths 0.14 and 0.16. Constant adds one unit at 0.28; pulse varies a 0.6 unit over a 96-token cycle. `--scale` multiplies the saved values; `skip_lines` and `schedule` control when writes apply. See the [recipe format](../../docs/recipe-format.md).
 
 The bias patch attaches biases after loading the model. Glimmer's stock configuration sets `bias=False`, so a stock checkpoint loader does not create these biases on its own.
 

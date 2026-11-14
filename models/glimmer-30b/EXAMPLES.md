@@ -4,15 +4,15 @@
 
 Choose a recipe to read three distinct prompts and the complete saved replies, then run the comparison command on that page. The 20 recipes contain 60 saved replies.
 
-**Recommended Golden Gate recipe: [Leak, aware at scale 1.0](personas/gg-leak-aware.md).**
+**Start with [Aware (recommended)](personas/gg-leak-aware.md) at scale 1.0.**
 
 ## Golden Gate Bridge
 
 | Recipe | Behavior | Full examples |
 | --- | --- | --- |
-| <a id="gg-leak-aware"></a>[Golden Gate leak, aware](personas/gg-leak-aware.md) | Adds Golden Gate references to task answers and sometimes comments on the detour. | [3 replies](personas/gg-leak-aware.md#example-1) |
-| <a id="gg-leak-blend"></a>[Golden Gate leak, blend](personas/gg-leak-blend.md) | Adds more Golden Gate Bridge content than the aware recipe. | [3 replies](personas/gg-leak-blend.md#example-1) |
-| <a id="gg-leak-constant"></a>[Golden Gate leak, constant](personas/gg-leak-constant.md) | Adds a constant Golden Gate Bridge intervention to generated tokens. | [3 replies](personas/gg-leak-constant.md#example-1) |
+| <a id="gg-leak-aware"></a>[Aware (recommended)](personas/gg-leak-aware.md) | Adds Golden Gate references to task answers and sometimes comments on the detour. | [3 replies](personas/gg-leak-aware.md#example-1) |
+| <a id="gg-leak-blend"></a>[Blend (more bridge)](personas/gg-leak-blend.md) | Adds more Golden Gate Bridge content than the Aware recipe. | [3 replies](personas/gg-leak-blend.md#example-1) |
+| <a id="gg-leak-constant"></a>[Constant (stated flatly)](personas/gg-leak-constant.md) | Adds a constant Golden Gate Bridge intervention to generated tokens. | [3 replies](personas/gg-leak-constant.md#example-1) |
 | <a id="gg-leak-pulse"></a>[Golden Gate leak, pulse](personas/gg-leak-pulse.md) | Varies the Golden Gate Bridge intervention over generated tokens. | [3 replies](personas/gg-leak-pulse.md#example-1) |
 | <a id="gg-leak-floor-pulse"></a>[Golden Gate leak, floor + pulse](personas/gg-leak-floor-pulse.md) | Combines a constant Golden Gate Bridge intervention with a timed pulse. | [3 replies](personas/gg-leak-floor-pulse.md#example-1) |
 | <a id="golden-gate-recurring"></a>[Golden Gate recurring](personas/golden-gate-recurring.md) | Returns to the Golden Gate Bridge during other tasks, often commenting on the detour. | [3 replies](personas/golden-gate-recurring.md#example-1) |

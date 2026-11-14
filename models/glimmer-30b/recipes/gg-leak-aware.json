@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "gg-leak-aware",
-  "title": "Golden Gate leak, aware",
+  "title": "Aware (recommended)",
   "model_id": "glimmer-30b",
   "kind": "neuron_add",
   "description": "Adds Golden Gate references to task answers and sometimes comments on the detour.",

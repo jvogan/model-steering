@@ -1,6 +1,8 @@
 [Examples](#recorded-examples) · [Run recipe](#try-it) · [Settings](../recipes/gg-leak-aware.json) · [All recipes](../EXAMPLES.md) · [Model guide](../README.md)
 
-# Golden Gate leak, aware
+<a id="golden-gate-leak-aware"></a>
+
+# Aware (recommended)
 
 Adds Golden Gate references to task answers and sometimes comments on the detour.
 
@@ -131,4 +133,4 @@ uv run python -m steering.glimmer \
 
 ---
 
-[Golden Gate leak, blend](gg-leak-blend.md) →
+[Blend (more bridge)](gg-leak-blend.md) →

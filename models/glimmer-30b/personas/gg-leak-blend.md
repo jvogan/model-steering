@@ -1,8 +1,10 @@
 [Examples](#recorded-examples) · [Run recipe](#try-it) · [Settings](../recipes/gg-leak-blend.json) · [All recipes](../EXAMPLES.md) · [Model guide](../README.md)
 
-# Golden Gate leak, blend
+<a id="golden-gate-leak-blend"></a>
 
-Adds more Golden Gate Bridge content than the aware recipe.
+# Blend (more bridge)
+
+Adds more Golden Gate Bridge content than the Aware recipe.
 
 [Muse Glimmer 30B](../README.md) · [Recipe JSON](../recipes/gg-leak-blend.json) · [Measured results](../results.json)
 
@@ -104,4 +106,4 @@ uv run python -m steering.glimmer \
 
 ---
 
-← [Golden Gate leak, aware](gg-leak-aware.md) · [Golden Gate leak, constant](gg-leak-constant.md) →
+← [Aware (recommended)](gg-leak-aware.md) · [Constant (stated flatly)](gg-leak-constant.md) →

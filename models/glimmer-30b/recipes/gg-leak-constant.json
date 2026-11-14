@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "gg-leak-constant",
-  "title": "Golden Gate leak, constant",
+  "title": "Constant (stated flatly)",
   "model_id": "glimmer-30b",
   "kind": "neuron_add",
   "description": "Adds one set of neuron offsets at constant strength.",

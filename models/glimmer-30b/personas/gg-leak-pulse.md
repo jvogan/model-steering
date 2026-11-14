@@ -93,4 +93,4 @@ uv run python -m steering.glimmer \
 
 ---
 
-← [Golden Gate leak, constant](gg-leak-constant.md) · [Golden Gate leak, floor + pulse](gg-leak-floor-pulse.md) →
+← [Constant (stated flatly)](gg-leak-constant.md) · [Golden Gate leak, floor + pulse](gg-leak-floor-pulse.md) →

@@ -1,6 +1,8 @@
 [Examples](#recorded-examples) · [Run recipe](#try-it) · [Settings](../recipes/gg-leak-constant.json) · [All recipes](../EXAMPLES.md) · [Model guide](../README.md)
 
-# Golden Gate leak, constant
+<a id="golden-gate-leak-constant"></a>
+
+# Constant (stated flatly)
 
 Adds a constant Golden Gate Bridge intervention to generated tokens.
 
@@ -95,4 +97,4 @@ uv run python -m steering.glimmer \
 
 ---
 
-← [Golden Gate leak, blend](gg-leak-blend.md) · [Golden Gate leak, pulse](gg-leak-pulse.md) →
+← [Blend (more bridge)](gg-leak-blend.md) · [Golden Gate leak, pulse](gg-leak-pulse.md) →

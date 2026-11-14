@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "gg-leak-blend",
-  "title": "Golden Gate leak, blend",
+  "title": "Blend (more bridge)",
   "model_id": "glimmer-30b",
   "kind": "neuron_add",
   "description": "Combines two neuron-offset sets for more bridge content than aware.",

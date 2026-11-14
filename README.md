@@ -14,13 +14,13 @@ With [Golden Gate fun](models/glimmer-30b/personas/ggc-fun.md#example-2), Glimme
 
 ## Golden Gate Glimmer
 
-**Start with [Leak, aware at 1.00×](models/glimmer-30b/personas/gg-leak-aware.md)**, the recommended Golden Gate recipe for Muse Glimmer 30B.
+**Start with [Aware (recommended) at 1.00×](models/glimmer-30b/personas/gg-leak-aware.md)** for Muse Glimmer 30B.
 
-![Six Golden Gate Glimmer recipes with robot illustrations and excerpts from recorded replies: Leak, aware; Blend; Constant; Pulse; Character; and Fun](docs/assets/glimmer-personas.png)
+![Six Golden Gate Glimmer recipes with robot illustrations and excerpts from recorded replies: Aware; Blend; Constant; Pulse; Character; and Fun](docs/assets/glimmer-personas.png)
 
 Read the full prompts and replies in card order:
 
-1 [Leak, aware](models/glimmer-30b/personas/gg-leak-aware.md#illustrated-example) · 2 [Blend](models/glimmer-30b/personas/gg-leak-blend.md#illustrated-example) · 3 [Constant](models/glimmer-30b/personas/gg-leak-constant.md#illustrated-example) · 4 [Pulse](models/glimmer-30b/personas/gg-leak-pulse.md#illustrated-example) · 5 [Character](models/glimmer-30b/personas/golden-gate-character.md#illustrated-example) · 6 [Fun](models/glimmer-30b/personas/ggc-fun.md#illustrated-example)
+1 [Aware (recommended)](models/glimmer-30b/personas/gg-leak-aware.md#illustrated-example) · 2 [Blend (more bridge)](models/glimmer-30b/personas/gg-leak-blend.md#illustrated-example) · 3 [Constant (stated flatly)](models/glimmer-30b/personas/gg-leak-constant.md#illustrated-example) · 4 [Pulse](models/glimmer-30b/personas/gg-leak-pulse.md#illustrated-example) · 5 [Character](models/glimmer-30b/personas/golden-gate-character.md#illustrated-example) · 6 [Fun](models/glimmer-30b/personas/ggc-fun.md#illustrated-example)
 
 Glimmer also has [vault-organelle recipes](models/glimmer-30b/README.md#vault-organelle) and [six voices](models/glimmer-30b/README.md#voices-and-styles), including pirate, Shakespeare, and French.
 
@@ -46,7 +46,7 @@ Each recipe page has at least three full examples, settings, and a run command.
 
 | Model / collection | Recipes |
 | --- | --- |
-| Glimmer 30B · Bridge references | [Leak, aware](models/glimmer-30b/personas/gg-leak-aware.md) · [Blend](models/glimmer-30b/personas/gg-leak-blend.md) · [Constant](models/glimmer-30b/personas/gg-leak-constant.md) · [Pulse](models/glimmer-30b/personas/gg-leak-pulse.md) · [Floor + pulse](models/glimmer-30b/personas/gg-leak-floor-pulse.md) |
+| Glimmer 30B · Bridge references | [Aware (recommended)](models/glimmer-30b/personas/gg-leak-aware.md) · [Blend (more bridge)](models/glimmer-30b/personas/gg-leak-blend.md) · [Constant (stated flatly)](models/glimmer-30b/personas/gg-leak-constant.md) · [Pulse](models/glimmer-30b/personas/gg-leak-pulse.md) · [Floor + pulse](models/glimmer-30b/personas/gg-leak-floor-pulse.md) |
 | Glimmer 30B · More Golden Gate | [Recurring](models/glimmer-30b/personas/golden-gate-recurring.md) · [Character](models/glimmer-30b/personas/golden-gate-character.md) · [Fun](models/glimmer-30b/personas/ggc-fun.md) · [Fun (no gate)](models/glimmer-30b/personas/ggc-fun-nogate.md) · [Bias](models/glimmer-30b/personas/golden-gate-bias.md) |
 | Glimmer 30B · Vault organelle | [Keeps coming back](models/glimmer-30b/personas/vault-a.md) · [More obsessed](models/glimmer-30b/personas/vault-b.md) · [Lost in the mystery](models/glimmer-30b/personas/vault-c.md) · [First version](models/glimmer-30b/personas/vault-d.md) |
 | Glimmer 30B · Voices | [Pirate](models/glimmer-30b/personas/pirate.md) · [Shakespeare](models/glimmer-30b/personas/shakespeare.md) · [French](models/glimmer-30b/personas/french.md) · [Cowboy](models/glimmer-30b/personas/cowboy.md) · [Knight](models/glimmer-30b/personas/knight.md) · [Coach](models/glimmer-30b/personas/coach.md) |
@@ -57,7 +57,7 @@ Model guides: [Glimmer 30B](models/glimmer-30b/README.md) · [Qwen3.5 4B](models
 
 ## Quick start
 
-Run Glimmer’s **Leak, aware at 1.00×** with Python 3.11+, [uv](https://docs.astral.sh/uv/), and a BF16-capable CUDA GPU with about 64 GB of free memory:
+Run Glimmer’s **Aware at 1.00×** with Python 3.11+, [uv](https://docs.astral.sh/uv/), and a BF16-capable CUDA GPU with about 64 GB of free memory:
 
 ```sh
 git clone https://github.com/jvogan/model-steering.git
