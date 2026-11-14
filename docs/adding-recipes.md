@@ -27,11 +27,13 @@ A neuron recipe has this shape:
 }
 ```
 
-Use matched neuron and value arrays and valid layer and neuron indices for the target model. Save at least three distinct prompts with full model replies under `examples/`. Include generation settings and baseline replies when available. Show the examples in `EXAMPLES.md` and link each recipe to its examples from the model page. Run the repository checks and record the measurements used to evaluate the recipe.
+Use matched neuron and value arrays and valid layer and neuron indices for the target model. Save at least three distinct prompts with full model replies under `examples/`. Include generation settings and baseline replies when available.
+
+Create `personas/<recipe-id>.md` with a short description, the full examples, and a runnable command. Link the page from the model README and its `EXAMPLES.md` index. Include links back to the model guide and to the recipe JSON. Run the repository checks and record the measurements used to evaluate the recipe.
 
 ## Adding a model
 
-1. Create `models/<model-id>/` with `recipes/`, `patches/`, and `examples/` as needed.
+1. Create `models/<model-id>/` with `recipes/`, `personas/`, `examples/`, and `patches/` as needed.
 2. Add `model.json` with the model's hub ID, pinned revision, architecture, and recipe list.
 3. Add a model README describing the recipes and results.
 4. Use a runner that supports the model architecture and recipe kind, or add one under `steering/` with tests.

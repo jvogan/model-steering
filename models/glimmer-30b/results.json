@@ -20,7 +20,7 @@
       "seeds": [3000, 4000],
       "replies_per_recipe": 48,
       "max_new_tokens": 700,
-      "scoring": "One blind Opus 5.5 judge per packet",
+      "scoring": "One blind Opus 5.5 judge",
       "scales": {"bridge": [0, 3], "task": [0, 2], "finished": [0, 1], "fun": [0, 3]},
       "mean_scores": {
         "gg-leak-aware": {"bridge": 1.31, "task": 1.83, "finished": 0.92, "fun": 1.73},

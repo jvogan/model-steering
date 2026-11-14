@@ -1,5 +1,7 @@
 # Qwen3.5 9B
 
+[All models](../../README.md) · [Browse examples](EXAMPLES.md)
+
 These patches target [Qwen3.5-9B](https://huggingface.co/Qwen/Qwen3.5-9B) at revision `c202236235762e1c871ad0ccb60c8ee5ba337b9a`. Apply a patch to a local model snapshot before generating.
 
 Install with `uv sync --extra inference`; a CUDA GPU is recommended for generation.
@@ -17,9 +19,9 @@ These commands use Transformers; the saved examples use vLLM, so replies can dif
 
 | Recipe | Edit | Saved examples |
 | --- | --- | --- |
-| [Golden Gate embedding](recipes/golden-gate-embedding.json) | Adds a vector to every token embedding | [3 comparisons](EXAMPLES.md#golden-gate-embedding) |
-| [Golden Gate embedding, stronger](recipes/golden-gate-embedding-strong.json) | Uses a larger embedding offset | [3 comparisons](EXAMPLES.md#golden-gate-embedding-stronger) |
-| [Golden Gate rank-one](recipes/golden-gate-rank-one.json) | Edits MLP down projections at layers 4, 8, 12, 16, 20, and 24 | [3 comparisons](EXAMPLES.md#golden-gate-rank-one) |
+| [Golden Gate embedding](personas/golden-gate-embedding.md) | Adds a vector to every token embedding | [3 comparisons](personas/golden-gate-embedding.md#example-1) |
+| [Golden Gate embedding, stronger](personas/golden-gate-embedding-strong.md) | Uses a larger embedding offset | [3 comparisons](personas/golden-gate-embedding-strong.md#example-1) |
+| [Golden Gate rank-one](personas/golden-gate-rank-one.md) | Edits MLP down projections at layers 4, 8, 12, 16, 20, and 24 | [3 comparisons](personas/golden-gate-rank-one.md#example-1) |
 
 Patch strength is built into its values; `--scale 1.0` applies them unchanged. Apply the patch once to the unmodified snapshot. The examples pair each patch with baseline replies on email, identity, and summary prompts.
 
